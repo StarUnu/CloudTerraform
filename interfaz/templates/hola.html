@@ -1,0 +1,16 @@
+<!doctype html>
+<title>Hello from Flask</title>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/estilo.css') }}">
+{% block title %}Registro de usuarios{% endblock %}
+{% block content %}
+   <div class="header">
+    <form action="" method="post">
+	<h1> Encuentra palabras</h1>
+	<div class="form-box">
+        <label for="text">Busqueda: </label>
+        <input type="text" id="search" name="search" /><br>
+        <input type="submit" id="send-signup" name="signup" value="Registrar" />
+	</div>
+    </form>
+   </div>
+{% endblock %}
